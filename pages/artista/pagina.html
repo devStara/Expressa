@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+        <a href="../index.html" class="text-2xl font-black tracking-[-0.08em]">expressa<span
+                class="text-[#ff6542]">.</span></a>
+        <nav id="navbar" class="hidden items-center gap-8 text-sm font-bold md:flex">
+            <a href="#artistas" class="transition-colors hover:text-[#ff6542]">Artistas</a>
+            <a href="#sobre" class="transition-colors hover:text-[#ff6542]">Sobre o projeto</a>
+            <a href="#contato" class="transition-colors hover:text-[#ff6542]">Contato</a>
+            <a href="../auth/login.html"
+                class="rounded-full border border-[#1d1d1b] px-5 py-2 transition hover:bg-[#1d1d1b] hover:text-white">Entrar</a>
+        </nav>
+        <button id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false"
+            class="text-sm font-bold md:hidden">Menu +</button>
+    </header>
+    <nav id="mobileNav" class="hidden border-y border-[#1d1d1b]/10 bg-[#f7f3ed] px-6 py-5 md:hidden">
+        <div class="flex flex-col gap-4 text-sm font-bold">
+            <a href="#artistas">Artistas</a>
+            <a href="#sobre">Sobre o projeto</a>
+            <a href="#contato">Contato</a>
+            <a href="../auth/login.html">Entrar</a>
+        </div>
+    </nav>
+    <main>
+        <section class="flex flex-row gap-10 p-12">
+            <div class="flex flex-col gap-4">
+                <h2>Saldação</h2>
+                <h1>Nome do artista</h1>
+                <span>tipo de arte</span>
+                <p>descrição resumida</p>
+                <div class=" flex flex-row gap-4">
+                    <a href="">Saiba mais</a>
+                    <a href="">ver trabalhos</a>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="foto do artista">
+            </div>
+        </section>
+
+        <section class=" flex flex-col">
+            <h1>Serviços que faço</h1>
+            <div class="flex flex-row gap-4">
+                <div class="flex flex-col">
+                    <img src="" alt="icone do serviço">
+                    <h3>serviço</h3>
+                    <p>descrição do serviço</p>
+                </div>
+                <div class="flex flex-col">
+                    <img src="" alt="icone do serviço">
+                    <h3>serviço</h3>
+                    <p>descrição do serviço</p>
+                </div>
+                <div class="flex flex-col">
+                    <img src="" alt="icone do serviço">
+                    <h3>serviço</h3>
+                    <p>descrição do serviço</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col">
+            <h1>Sobre mim</h1>
+            <div class="flex flex-row">
+                <div>
+                    <img src="" alt="foto do artista">
+                </div>
+                <div class="flex flex-col">
+                    <h2>Nome do artista</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id eius iste eligendi possimus in quo
+                        obcaecati ut, voluptatem itaque.</p>
+                    <div class="flex flex-col">
+                        <li class="flex flex-row"><span>icone</span> local de atuação</li>
+                        <li class="flex flex-row"><span>icone</span> Cidade</li>
+                        <li class="flex flex-row"><span>icone</span> Tipo de arte</li>
+                    </div>
+                    <a href="">contato</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col">
+            <h1>portifolio</h1>
+            <div class="flex flex-row">
+                <div>
+                    <div>
+                        <h2>Nome da arte</h2>
+                        <img src="" alt="">
+                        <p>clique para mais</p>
+                    </div>
+                    <!-- hover/click para mostrar mais da arte -->
+                    <div class="hidden ">
+                        <p>descrição da arte: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut ex,
+                            corrupti aperiam molestias.</p>
+                        <div>
+                            <!-- lista de tags da arte -->
+                            <li>tag</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- puxa do banco de dados -->
+            </div>
+        </section>
+
+        <section class="flex flex-col">
+            <h1>Habilidades</h1>
+            <div class="flex flex-row">
+                <button>prev</button>
+                <div class="flex flex-row">
+                    <!-- carrosel -->
+                    <div class="flex flex-col">
+                        <h2>Skill</h2>
+                        <p>experiencia dele com a skill</p>
+                    </div>
+                </div>
+                <button>next</button>
+            </div>
+        </section>
+
+        <section>
+            <!-- area de contato com o artista -->
+            <form action=""></form>
+        </section>
+    </main>
+    <footer class="border-t border-[#1d1d1b]/10 px-6 py-8 lg:px-10">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#1d1d1b]/60 sm:flex-row"><span
+                class="font-black tracking-[-0.05em] text-[#1d1d1b]">expressa<span
+                    class="text-[#ff6542]">.</span></span><span>Feito para amplificar talentos
+                independentes.</span><span>© 2026
+                Expressa</span></div>
+    </footer>
 </body>
+
 </html>
